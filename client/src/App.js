@@ -1,6 +1,6 @@
 import React from 'react'
 
-const App = () => <div> Hola World 👋 </div>
+const App = () => <div> Herro World 👋 </div>
 
 
 export default App
