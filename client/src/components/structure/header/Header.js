@@ -9,10 +9,6 @@ const Header = () => {
       <nav>
         <NavItem exact to='/'> Home </NavItem>
         <NavItem to='/about'> About </NavItem>
-        <NavItem> Find Me Dinner </NavItem>
-        <NavItem> What's in the fridge? </NavItem>
-        <NavItem> My Saved Recipes </NavItem>
-        <NavItem> My Profile </NavItem>
       </nav>
 
     </div>
