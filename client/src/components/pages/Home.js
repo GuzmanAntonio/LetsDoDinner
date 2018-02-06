@@ -34,7 +34,7 @@ const Home = () => {
         <h1 style={style.h1}> Lets Do Dinner </h1>
         <p style={style.h2}> Some text </p>
         <p style={style.h3}> Some text </p>
-        <img alt='' style={style.img}src='https://cdn4.iconfinder.com/data/icons/Cupcakes_iContainer/128/White.png' />
+        <img alt='' style={style.img}src='https://cdn0.iconfinder.com/data/icons/bakery-10/512/Cupcake-256.png' />
       </div>
     </div>
   )
