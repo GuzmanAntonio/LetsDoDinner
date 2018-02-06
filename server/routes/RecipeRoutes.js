@@ -14,6 +14,28 @@ Router.route(`/http://food2fork.com/api/get`)
     })
   })
 
+Router.route('/http://food2fork.com/api/get/:recipeId')
+  .get((req, res) => {
+    const recipeId = req.params.recipeId
+    Recipe.findById({_id: recipeId}, (err, recipe) => {
+      if (err) {
+        res.json({errpr: err})
+      } else {
+        res.json({msg: `FOUND RECIPE ${recipeId}`, recipe})
+      }
+    })
+  })
+  .delete((re, res) => {
+    const deleteRecipe = req.params.recipeId
+    Recipe.remove({_id: deleteRecipe}, (err, recipe) => {
+      if (err) {
+        res.json({error: err})
+      } else {
+        res.json({msg: `DELETED ${deleteRecipe}`, recipe})
+      }
+    })
+  })
+
 Router.route('/http://food2fork.com/api/search')
 .get((req, res) => {
   Recipe.find((err, recipe) => {
