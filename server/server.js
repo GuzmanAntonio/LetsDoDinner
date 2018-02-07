@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const RecipeRoutes = require('./routes/RecipeRoutes')
+const Users = require('./routes/Users')
 
 const app = express()
 
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(require('./config/error-handler'))
 
 app.use('/', RecipeRoutes)
+app.use('/', Users)
 
 const server = app.listen(port, () => console.log(`Running on port: ${port} 🙈  🙉  🙊`))
 

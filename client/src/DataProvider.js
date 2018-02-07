@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Layout from './components/structure/Layout'
 import $ from 'jquery'
-// import * as UserApi from './lib.userApi'
+import * as UserApi from './lib.userApi'
 
 class DataProvider extends Component {
   state = {
@@ -27,7 +27,19 @@ class DataProvider extends Component {
         console.log(`Data Provider Search Route`, response)
         this.setState({isLoaded: true, recipes: response.data})
       })
-    }
+    },
+    newUser: (user) =>
+      UserApi.signupUser(user)
+        .then(user => {
+          this.setState({user})
+          return user
+        }),
+    loginUser: (email, password) =>
+      UserApi.loginUser(email, password)
+        .then(user => {
+          this.methods.getUser(user)
+          return user
+        })
   }
 
   componentDidMount () {

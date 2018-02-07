@@ -1,5 +1,3 @@
-import { request } from 'http';
-
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
@@ -14,7 +12,7 @@ const User = new Schema({
 User.methods.setUserData = function (requestBody) {
   this.userName = requestBody.userName || this.userName
   this.email = requestBody.email || this.email
-  this.password = request.password || this.password
+  this.password = requestBody.password || this.password
 }
 
 module.exports = mongoose.model('User', User)
