@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Layout from './components/structure/Layout'
 import $ from 'jquery'
-// import * as UserApi from './lib.userApi'
+import * as UserApi from './lib/userApi
 
 class DataProvider extends Component {
   state = {
