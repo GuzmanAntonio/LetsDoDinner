@@ -17,7 +17,7 @@ const Layout = ({domainData}) => {
 }
 
 Layout.propTypes = {
-  domainData: PropTypes.func.isRequired
+  domainData: PropTypes.object.isRequired
 }
 
 export default Layout

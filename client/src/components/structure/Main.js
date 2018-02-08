@@ -19,5 +19,6 @@ const Main = ({domainData}) => {
 
 Main.propTypes = {
   domainData: PropTypes.object.isRequired
+}
 
 export default Main
