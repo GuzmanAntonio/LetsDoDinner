@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Layout from './components/structure/Layout'
-import $ from 'jquery'
-import * as UserApi from './lib/userApi'
+// import $ from 'jquery'
+// import * as UserApi from './lib/userApi'
 
 class DataProvider extends Component {
   state = {
@@ -9,41 +9,15 @@ class DataProvider extends Component {
     recipes: []
   }
 
-  methods = {
-    getAllRecipes: () => {
-      $.ajax({
-        url: '/http://food2fork.com/api/get',
-        method: 'GET'
-      }).done((response) => {
-        console.log(`Get All Recipe Data Provider`, response)
-        this.setState({isLoaded: true, recipes: response.data})
-      })
-    },
-    searchRecipe: () => {
-      $.ajax({
-        url: 'http://food2fork.com/api/search',
-        method: 'GET'
-      }).done((response) => {
-        console.log(`Data Provider Search Route`, response)
-        this.setState({isLoaded: true, recipes: response.data})
-      })
-    },
-    newUser: (user) =>
-      UserApi.signupUser(user)
-        .then(user => {
-          this.setState({user})
-          return user
-        }),
-    loginUser: (email, password) =>
-      UserApi.loginUser(email, password)
-        .then(user => {
-          this.methods.getUser(user)
-          return user
-        })
-  }
-
   componentDidMount () {
-    this.methods.getAllRecipes()
+    fetch('http://www.food2fork.com/api/search?key=8defee2e32595ca866a94f526f42c9e6&q=shredded%20chicken')
+      .then(function (response) {
+        return response.json()
+      }).then(function (json) {
+        console.log('SUCCESS', json)
+      }).catch(function (ex) {
+        console.log('failed', ex)
+      })
   }
 
   render () {
