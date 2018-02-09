@@ -3,7 +3,6 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import Drawer from 'material-ui/Drawer'
-// import MenuItem from 'material-ui/MenuItem'
 import RaisedButton from 'material-ui/RaisedButton'
 import AppBar from 'material-ui/AppBar'
 import NavItem from './NavItem'
@@ -59,6 +58,7 @@ export default class Sidebar extends React.Component {
                   <NavItem to='/beef'> Beef </NavItem>
                   <NavItem to='/pork'> Pork </NavItem>
                   <NavItem to='/fish'> Fish </NavItem>
+                  <NavItem to='/ingredient-search'> Ingredient Search </NavItem>
                 </nav>
               </Drawer>
             </div>
