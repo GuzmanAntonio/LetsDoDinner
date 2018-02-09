@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import Drawer from 'material-ui/Drawer'
 // import MenuItem from 'material-ui/MenuItem'
+import ActionAndroid from 'material-ui/svg-icons/action/android'
 import RaisedButton from 'material-ui/RaisedButton'
 import AppBar from 'material-ui/AppBar'
 import NavItem from './NavItem'
@@ -37,7 +38,7 @@ export default class Sidebar extends React.Component {
             <div>
               <div>
                 <RaisedButton
-                  label='🍔'
+                  icon={<ActionAndroid />}
                   onClick={this.handleToggle}
                 />
               </div>

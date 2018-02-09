@@ -4,7 +4,8 @@ const styles = {
   container: {
     background: '#87fffb',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundImage: 'url("https://www.transparenttextures.com/patterns/cutcube.png")'
   }
 }
 
