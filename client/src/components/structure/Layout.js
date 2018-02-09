@@ -1,23 +1,18 @@
 import React from 'react'
-import Header from './header/Header'
+import Menu from './header/Menu'
 import Main from './Main'
 import Footer from './Footer'
-import PropTypes from 'prop-types'
 
-const Layout = ({domainData}) => {
+const Layout = () => {
   return (
     <div>
-      <Header domainData={domainData} />
+      <Menu />
       <div>
-        <Main domainData={domainData} />
+        <Main />
         <Footer />
       </div>
     </div>
   )
-}
-
-Layout.propTypes = {
-  domainData: PropTypes.object.isRequired
 }
 
 export default Layout
