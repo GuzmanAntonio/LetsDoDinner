@@ -7,19 +7,18 @@ const styles = {
   }
 }
 
-const TopRatedCard = ({ recipe }) => {
+const FishCard = ({ recipe }) => {
   return (
     <div>
       <p>{recipe.title}</p>
-      <p>Rank:{recipe.social_rank}</p>
       <div><a href={recipe.f2f_url}>View Recipe</a></div>
       <img style={styles.image} alt='' src={recipe.image_url} />
     </div>
   )
 }
 
-TopRatedCard.propTypes = {
+FishCard.propTypes = {
   recipe: PropTypes.object.isRequired
 }
 
-export default TopRatedCard
+export default FishCard

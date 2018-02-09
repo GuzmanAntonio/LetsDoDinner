@@ -12,8 +12,8 @@ const style = {
   h1: {
     fontFamily: 'Oswald',
     backgroundColor: '#ffd84c',
-    padding: 50
-
+    padding: 50,
+    fontSize: 70
   },
   h2: {
     fontFamily: 'Quicksand',
@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div>
       <div style={style.container}>
-        <h1 style={style.h1}> Lets Do Dinner </h1>
+        <p style={style.h1}> Lets Do Dinner </p>
         <p style={style.h2}> Some text </p>
         <p style={style.h3}> Some text </p>
         <img alt='' style={style.img}src='https://cdn0.iconfinder.com/data/icons/bakery-10/512/Cupcake-256.png' />
