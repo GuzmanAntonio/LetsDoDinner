@@ -3,11 +3,7 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import Drawer from 'material-ui/Drawer'
-<<<<<<< HEAD
-// import MenuItem from 'material-ui/MenuItem'
 import ActionAndroid from 'material-ui/svg-icons/action/android'
-=======
->>>>>>> 375b056433a55c1cad39a2c954b8b4d96b9cd12e
 import RaisedButton from 'material-ui/RaisedButton'
 import AppBar from 'material-ui/AppBar'
 import NavItem from './NavItem'
