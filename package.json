@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "fetch-polyfill": "^0.8.2",
+    "material": "^0.2.6",
     "material-ui": "^0.20.0",
     "react-cubeview": "^2.6.23",
     "react-favicon": "0.0.13"

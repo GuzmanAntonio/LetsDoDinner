@@ -2,9 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import TrendingRecipesCard from './TrendingRecipesCard'
 
+const style = {
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}
+
 const TrendingRecipesList = ({ trendingRecipes }) => {
   return (
-    <div>
+    <div style={style.container}>
       {
         trendingRecipes.map((recipe, index) =>
           <TrendingRecipesCard key={index} recipe={recipe} />

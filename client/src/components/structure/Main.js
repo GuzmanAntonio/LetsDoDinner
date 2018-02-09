@@ -9,9 +9,15 @@ import BeefContainer from '../pages/beef/BeefContainer'
 import PorkContainer from '../pages/pork/PorkContainer'
 import FishContainer from '../pages/fish/FishContainer'
 
+const style = {
+  container: {
+    backgroundColor: 'white'
+  }
+}
+
 const Main = () => {
   return (
-    <div>
+    <div style={style.container}>
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
       <Route path='/trending-recipes' render={() => <TrendingRecipesContainer />} />
