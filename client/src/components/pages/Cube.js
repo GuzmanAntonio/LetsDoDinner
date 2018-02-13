@@ -1,5 +1,4 @@
 import React from 'react'
-import shape from 'semantic-ui-react'
 
 const Cube = () =>
 

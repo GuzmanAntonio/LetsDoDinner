@@ -33,18 +33,18 @@ const styles = {
   }
 }
 
-const TrendingRecipesCard = ({ recipe }) => {
+const SearchResultsCard = ({ recipe }) => {
   return (
     <div style={styles.container}>
-      <p style={styles.h1}> {recipe.title}</p>
+      <h1 style={styles.h1}>{recipe.title}</h1>
       <div><a href={recipe.f2f_url}>View Recipe</a></div>
       <img style={styles.image} alt='' src={recipe.image_url} />
     </div>
   )
 }
 
-TrendingRecipesCard.propTypes = {
+SearchResultsCard.propTypes = {
   recipe: PropTypes.object.isRequired
 }
 
-export default TrendingRecipesCard
+export default SearchResultsCard
