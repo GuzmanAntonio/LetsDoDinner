@@ -42,6 +42,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "fetch-polyfill": "^0.8.2",
+    "material-design-icons": "^3.0.1",
     "material": "^0.2.6",
     "material-ui": "^0.20.0",
     "react-cubeview": "^2.6.23",

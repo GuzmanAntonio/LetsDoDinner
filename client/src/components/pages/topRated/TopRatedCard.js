@@ -13,7 +13,7 @@ const styles = {
     margin: 5,
     textAlign: 'center',
     fontFamily: 'Quicksand',
-    webkitBoxSizing: 'border-box',
+    WebkitBoxSizing: 'border-box',
     borderTopRadius: 5
   },
   image: {
