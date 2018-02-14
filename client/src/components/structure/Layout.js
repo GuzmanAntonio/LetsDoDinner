@@ -7,14 +7,21 @@ const style = {
   container: {
     backgroundColor: '#87fffb',
     textAlign: 'center'
+  },
+  menu: {
+    display: 'flex',
+    flexDirection: 'row'
   }
 }
 
-const Layout = () =>
-  <div style={style.container}>
-    <Menu />
-    <div>
-      <Main />
+const Layout = () => {
+  return (
+    <div style={style.container} >
+      <div style={style.menu} >
+        <Menu />
+      </div>
+      <div>
+        <Main />
     </div>
     <Footer />
   </div>

@@ -3,7 +3,7 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import Drawer from 'material-ui/Drawer'
-import ActionAndroid from 'material-ui/svg-icons/action/android'
+// import ActionAndroid from 'material-ui/svg-icons/action/android'
 import RaisedButton from 'material-ui/RaisedButton'
 import AppBar from 'material-ui/AppBar'
 import NavItem from './NavItem'
@@ -13,7 +13,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    border: 'black red 3px'
   },
   background: {
     color: 'red'
@@ -37,7 +38,7 @@ export default class Sidebar extends React.Component {
             <div>
               <div>
                 <RaisedButton
-                  icon={<ActionAndroid />}
+                  label='MENU'
                   onClick={this.handleToggle}
                 />
               </div>
@@ -51,7 +52,7 @@ export default class Sidebar extends React.Component {
               >
                 <AppBar title='Menu' />
                 <nav style={styles.container} >
-                  <NavItem exact to='/'> Home </NavItem>
+                  <NavItem exact to='/'>  Home </NavItem>
                   <NavItem to='/about'> About </NavItem>
                   <NavItem to='/trending-recipes'> Trending </NavItem>
                   <NavItem to='/top-rated'> Top Rated </NavItem>
