@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.css'
 
-
 const style = {
   containerOne: {
     backgroundColor: 'white',
@@ -17,7 +16,7 @@ const style = {
   containerTwo: {
     backgroundColor: 'white',
     borderBottom: '3px solid #87fffb',
-    marginTop: '-200',
+    marginTop: -200,
     padding: 40,
     display: 'flex',
     flexDirection: 'column',
@@ -67,14 +66,14 @@ const Home = () =>
         <h1> Welcome </h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-  <div>
-    <div style={style.container}>
-      <p style={style.h1}> Lets Do Dinner </p>
-      <p style={style.h2}> Some text </p>
-      <p style={style.h3}> Some text </p>
-      <img alt='' style={style.img}src='https://cdn0.iconfinder.com/data/icons/bakery-10/512/Cupcake-256.png' />
-    </div>
-  </div>
+      <div>
+        <div style={style.container}>
+          <p style={style.h1}> Lets Do Dinner </p>
+          <p style={style.h2}> Some text </p>
+          <p style={style.h3}> Some text </p>
+          <img alt='' style={style.img}src='https://cdn0.iconfinder.com/data/icons/bakery-10/512/Cupcake-256.png' />
+        </div>
+      </div>
 
       <div style={style.containerTwo}>
         <h1> Get Started </h1>

@@ -14,7 +14,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-between',
-    border: 'black red 3px'
+    border: '3px red'
   },
   background: {
     color: 'red'

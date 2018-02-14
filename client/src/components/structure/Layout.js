@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from './header/Menu'
 import Main from './Main'
 import Footer from './Footer'
+import Header from './Header'
 
 const style = {
   container: {
@@ -17,7 +18,8 @@ const style = {
 const Layout = () => {
   return (
     <div style={style.container} >
-      <div style={style.menu} >
+      <Header />
+      <div style={style.menu}>
         <Menu />
       </div>
       <div>
