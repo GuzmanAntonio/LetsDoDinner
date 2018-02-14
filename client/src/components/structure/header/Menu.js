@@ -56,10 +56,6 @@ export default class Sidebar extends React.Component {
                   <NavItem to='/about'> About </NavItem>
                   <NavItem to='/trending-recipes'> Trending </NavItem>
                   <NavItem to='/top-rated'> Top Rated </NavItem>
-                  <NavItem to='/chicken'> Chicken </NavItem>
-                  <NavItem to='/beef'> Beef </NavItem>
-                  <NavItem to='/pork'> Pork </NavItem>
-                  <NavItem to='/fish'> Fish </NavItem>
                   <NavItem to='/ingredient-search'> Ingredient Search </NavItem>
                 </nav>
               </Drawer>

@@ -33,15 +33,12 @@ const styles = {
   }
 }
 
-const SearchResultsCard = ({ recipe }) => {
-  return (
-    <div style={styles.container}>
-      <h1 style={styles.h1}>{recipe.title}</h1>
-      <div><a href={recipe.f2f_url}>View Recipe</a></div>
-      <img style={styles.image} alt='' src={recipe.image_url} />
-    </div>
-  )
-}
+const SearchResultsCard = ({ recipe }) =>
+  <div style={styles.container}>
+    <h1 style={styles.h1}>{recipe.title}</h1>
+    <div><a href={recipe.f2f_url}>View Recipe</a></div>
+    <img style={styles.image} alt='' src={recipe.image_url} />
+  </div>
 
 SearchResultsCard.propTypes = {
   recipe: PropTypes.object.isRequired
