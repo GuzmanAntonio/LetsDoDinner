@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import TopRatedCard from './TopRatedCard'
+import SearchResultsCard from './SearchResultsCard'
 
 const style = {
   container: {
@@ -12,17 +12,17 @@ const style = {
   }
 }
 
-const TopRatedList = ({ topRatedRecipes }) =>
+const TopRatedList = ({ results }) =>
   <div style={style.container}>
     {
-      topRatedRecipes.map((recipe, index) =>
-        <TopRatedCard key={index} recipe={recipe} />
+      results.map((recipe, index) =>
+        <SearchResultsCard key={index} recipe={recipe} />
       )
     }
   </div>
 
 TopRatedList.propTypes = {
-  topRatedRecipes: PropTypes.array.isRequired
+  results: PropTypes.array.isRequired
 }
 
 export default TopRatedList

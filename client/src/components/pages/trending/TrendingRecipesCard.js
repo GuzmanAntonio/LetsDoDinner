@@ -13,7 +13,7 @@ const styles = {
     margin: 5,
     textAlign: 'center',
     fontFamily: 'Quicksand',
-    webkitBoxSizing: 'border-box',
+    WebkitBoxSizing: 'border-box',
     borderTopRadius: 5
   },
   image: {
@@ -33,15 +33,12 @@ const styles = {
   }
 }
 
-const TrendingRecipesCard = ({ recipe }) => {
-  return (
-    <div style={styles.container}>
-      <p style={styles.h1}> {recipe.title}</p>
-      <div><a href={recipe.f2f_url}>View Recipe</a></div>
-      <img style={styles.image} alt='' src={recipe.image_url} />
-    </div>
-  )
-}
+const TrendingRecipesCard = ({ recipe }) =>
+  <div style={styles.container}>
+    <p style={styles.h1}> {recipe.title}</p>
+    <div><a href={recipe.f2f_url}>View Recipe</a></div>
+    <img style={styles.image} alt='' src={recipe.image_url} />
+  </div>
 
 TrendingRecipesCard.propTypes = {
   recipe: PropTypes.object.isRequired
