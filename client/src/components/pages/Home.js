@@ -1,9 +1,5 @@
 import React from 'react'
-<<<<<<< Updated upstream
-import Cube from './Cube'
-=======
 import './style.css'
->>>>>>> Stashed changes
 
 const style = {
   containerOne: {
@@ -63,22 +59,6 @@ const style = {
   }
 }
 
-<<<<<<< Updated upstream
-const Home = () => {
-  return (
-    <div>
-      <div style={style.container}>
-        <p style={style.h1}> Lets Do Dinner </p>
-        <Cube />
-        <p style={style.h2}> Some text </p>
-        <p style={style.h3}> Some text </p>
-        <img alt='' style={style.img}src='https://cdn0.iconfinder.com/data/icons/bakery-10/512/Cupcake-256.png' />
-      </div>
-    </div>
-  )
-}
-
-=======
 const Home = () =>
   <div className='img' >
     <div >
@@ -101,5 +81,4 @@ const Home = () =>
       </div>
     </div>
   </div>
->>>>>>> Stashed changes
 export default Home
