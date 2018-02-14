@@ -12,17 +12,14 @@ const style = {
   }
 }
 
-const TopRatedList = ({ topRatedRecipes }) => {
-  return (
-    <div style={style.container}>
-      {
-        topRatedRecipes.map((recipe, index) =>
-          <TopRatedCard key={index} recipe={recipe} />
-        )
-      }
-    </div>
-  )
-}
+const TopRatedList = ({ topRatedRecipes }) =>
+  <div style={style.container}>
+    {
+      topRatedRecipes.map((recipe, index) =>
+        <TopRatedCard key={index} recipe={recipe} />
+      )
+    }
+  </div>
 
 TopRatedList.propTypes = {
   topRatedRecipes: PropTypes.array.isRequired

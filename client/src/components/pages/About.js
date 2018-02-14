@@ -8,12 +8,9 @@ const styles = {
   }
 }
 
-const About = () => {
-  return (
-    <div>
-      <p style={styles.p}>POWERED BY FOOD2FORK.COM</p>
-    </div>
-  )
-}
+const About = () =>
+  <div>
+    <p style={styles.p}>POWERED BY FOOD2FORK.COM</p>
+  </div>
 
 export default About
