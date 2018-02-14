@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import SearchResultsList from './SearchResultsList'
 
-const API_KEY = '8defee2e32595ca866a94f526f42c9e6'
+const apiKey = '8defee2e32595ca866a94f526f42c9e6'
 
 class IngredientSearchContainer extends Component {
   constructor () {
@@ -12,16 +12,14 @@ class IngredientSearchContainer extends Component {
     }
   }
 
-  _search = event =>
-    this.setState({
-      recipe: event.target.value
-    })
+  _search = (e) => {
+    this.setState({ recipe: e.target.value })
+  }
 
-  fetchRecipe = event => {
-    event.preventDefault()
+  fetchRecipe = (e) => {
+    e.preventDefault()
     const { recipe } = this.state
-
-    fetch(`https://sdg-cp.herokuapp.com?key=${API_KEY}&q=${recipe}`, {
+    fetch(`https://sdg-cp.herokuapp.com?key=${apiKey}&q=${recipe}`, {
       headers: {
         'target-url': 'https://food2fork.com/api/search'
       }
@@ -36,6 +34,8 @@ class IngredientSearchContainer extends Component {
     return (
       <div>
         <form action='submit' onSubmit={this.fetchRecipe}>
+          <h2>Enter ingredients, get recipes!</h2>
+          <p>Note: If entering multiple ingredients, please separate with commas.</p>
           <input
             type='text'
             onChange={this._search}
