@@ -12,17 +12,14 @@ const style = {
   }
 }
 
-const TrendingRecipesList = ({ trendingRecipes }) => {
-  return (
-    <div style={style.container}>
-      {
-        trendingRecipes.map((recipe, index) =>
-          <TrendingRecipesCard key={index} recipe={recipe} />
-        )
-      }
-    </div>
-  )
-}
+const TrendingRecipesList = ({ trendingRecipes }) =>
+  <div style={style.container}>
+    {
+      trendingRecipes.map((recipe, index) =>
+        <TrendingRecipesCard key={index} recipe={recipe} />
+      )
+    }
+  </div>
 
 TrendingRecipesList.propTypes = {
   trendingRecipes: PropTypes.array.isRequired

@@ -9,12 +9,9 @@ const styles = {
   }
 }
 
-const Footer = () => {
-  return (
-    <div style={styles.container} >
-      <h3>F2F</h3>
-    </div>
-  )
-}
+const Footer = () =>
+  <div style={styles.container} >
+    <h3>F2F</h3>
+  </div>
 
 export default Footer
