@@ -22,8 +22,10 @@ const Layout = () => {
       </div>
       <div>
         <Main />
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
+  )
+}
 
 export default Layout
