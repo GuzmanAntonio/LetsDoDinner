@@ -8,7 +8,6 @@ const style = {
   h1: {
     fontFamily: 'oswald',
     fontSize: 60,
-    // padding: -5,
     marginTop: -15,
     paddingBottom: 20,
     letterSpacing: 2

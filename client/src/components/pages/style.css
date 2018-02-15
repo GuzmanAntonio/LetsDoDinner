@@ -1,10 +1,29 @@
 .img {
-  background: url('https://image.freepik.com/free-photo/plate-and-ripe-vegetables-assortment_23-2147694064.jpg');
+  background-image: url('https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a76e75ea82cc42c0c63081c584cbb70&auto=format&fit=crop&w=1650&q=80');
   background-size: cover;
-  /* width: 80%; */
-  /* opacity: 0.7; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-;} 
+} 
+.centered {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.p {
+  font-size: 25px;
+  color: black
+}
+.p2 {
+  font-size: 25px;
+  color: black
+}
+.p3 {
+  font-size: 25px;
+  color: black
+}
+.imgTwo {
+  max-width: 70%;
+}
