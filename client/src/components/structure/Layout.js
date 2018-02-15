@@ -6,12 +6,15 @@ import Header from './Header'
 
 const style = {
   container: {
-    backgroundColor: '#87fffb',
-    textAlign: 'center'
+    // backgroundColor: '#87fffb',
+    textAlign: 'center',
+    border: '1px sold black',
+    margin: 5
   },
   menu: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    marginTop: -40
   }
 }
 
