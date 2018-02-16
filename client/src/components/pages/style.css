@@ -1,5 +1,5 @@
 .img {
-  background-image: url('https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a76e75ea82cc42c0c63081c584cbb70&auto=format&fit=crop&w=1650&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a76e75ea82cc42c0c63081c584cbb70&auto=format&fit=crop&w=1650&q=80'); */
   background-size: cover;
   display: flex;
   flex-direction: row;
