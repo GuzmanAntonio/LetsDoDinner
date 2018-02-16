@@ -4,11 +4,14 @@ import TrendingRecipesCard from './TrendingRecipesCard'
 
 const style = {
   container: {
+    paddingTop: 20,
+    backgroundColor: '#ffd84c',
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 10
   }
 }
 

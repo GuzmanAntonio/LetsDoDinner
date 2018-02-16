@@ -14,6 +14,7 @@ const style = {
     fontFamily: 'Quicksand'
   },
   containerTwo: {
+    backgroundColor: 'black',
     borderBottom: '3px solid #87fffb',
     marginTop: 10,
     marginBottom: 100,
@@ -21,11 +22,9 @@ const style = {
     margin: 40,
     fontFamily: 'Quicksand',
     position: 'relative',
-    textAlign: 'center',
-    backgroundColor: 'white'
+    textAlign: 'center'
   },
   containerThree: {
-    // backgroundColor: 'white',
     borderBottom: '3px solid #aee26f',
     padding: 20,
     display: 'flex',

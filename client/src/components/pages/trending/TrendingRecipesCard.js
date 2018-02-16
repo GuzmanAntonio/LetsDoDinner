@@ -1,5 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Card from 'material-ui/Card'
+// import Typography from 'material-ui/Typography'
+// import { withStyles } from 'material-ui/styles'
 
 const styles = {
   container: {
@@ -19,27 +22,35 @@ const styles = {
   image: {
     maxWidth: '100%'
   },
-  card: {
+  cardOne: {
     backgroundColor: 'red',
-    display: 'flex',
+    display: 'grid',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    margin: 15
   },
   h1: {
     textAlign: 'center',
     fontSize: 20
+  },
+  card: {
+    maxWidth: 345
   }
+
 }
 
 const TrendingRecipesCard = ({ recipe }) =>
-  <div style={styles.container}>
-    <p style={styles.h1}> {recipe.title}</p>
-    <div><a href={recipe.f2f_url}>View Recipe</a></div>
-    <img style={styles.image} alt='' src={recipe.image_url} />
+  <div style={styles.cardOne}>
+    <Card styles={styles.card}>
+      <div style={styles.container}>
+        <p style={styles.h1}> {recipe.title}</p>
+        <div><a href={recipe.f2f_url}>View Recipe</a></div>
+        <img style={styles.image} alt='' src={recipe.image_url} />
+      </div>
+    </Card>
   </div>
-
 TrendingRecipesCard.propTypes = {
   recipe: PropTypes.object.isRequired
 }
