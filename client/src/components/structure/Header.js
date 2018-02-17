@@ -1,24 +1,40 @@
 import React from 'react'
+import './styles.css'
 
 const style = {
   container: {
-    backgroundColor: 'white'
+    borderBottom: '2px solid black',
+    backgroundColor: 'white',
+    paddingTop: 10,
+    marginBottom: -70
 
   },
   h1: {
     fontFamily: 'oswald',
-    fontSize: 60,
-    // padding: -5,
+    fontSize: 70,
     marginTop: -15,
     paddingBottom: 20,
     letterSpacing: 2
   },
   p: {
     fontFamily: 'Parisienne',
-    fontSize: 40,
+    fontSize: 50,
     paddingTop: 10,
     margin: -5
 
+  },
+  dots: {
+    margin: -100
+  },
+  icon: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    fontSize: 30,
+    // border: '1px solid black',
+    paddingRight: 1000
+  },
+  img: {
+    maxWidth: '100%'
   }
 }
 

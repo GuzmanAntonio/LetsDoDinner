@@ -4,7 +4,7 @@ import './style.css'
 const style = {
   containerOne: {
     backgroundColor: 'white',
-    borderBottom: '3px solid #ffc9db',
+    borderBottom: '3px solid #ffd84c',
     padding: 40,
     display: 'flex',
     flexDirection: 'column',
@@ -14,34 +14,34 @@ const style = {
     fontFamily: 'Quicksand'
   },
   containerTwo: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     borderBottom: '3px solid #87fffb',
-    marginTop: -200,
-    padding: 40,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 10,
+    marginBottom: 100,
+    padding: 20,
     margin: 40,
     fontFamily: 'Quicksand',
-    textDecoration: 'none'
+    position: 'relative',
+    textAlign: 'center'
   },
   containerThree: {
-    backgroundColor: 'white',
     borderBottom: '3px solid #aee26f',
-    padding: 40,
+    padding: 20,
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     margin: 40,
-    fontFamily: 'Quicksand'
+    fontFamily: 'Quicksand',
+    maWidth: '10%',
+    paddingRight: 30
+
   },
   h1: {
-    fontFamily: 'Oswald',
-    backgroundColor: '#ffd84c',
-    padding: 50,
-    fontSize: 70
+    fontFamily: 'Quicksand',
+    fontSize: 45,
+    marginTop: -10,
+    marginBottom: -2
   },
   h2: {
     fontFamily: 'Quicksand',
@@ -51,11 +51,11 @@ const style = {
     backgroundColor: '#87fffb'
   },
   img: {
-    width: '50%',
-    opacity: 0.7
+    width: '30%'
   },
-  p: {
-    fontSize: 20
+  imgTwo: {
+    width: '30%',
+    borderRadius: 5
   }
 }
 
@@ -63,30 +63,24 @@ const Home = () =>
   <div className='img' >
     <div >
       <div style={style.containerOne}>
-        <h1> Welcome </h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div>
-        <div style={style.container}>
-          <p style={style.h1}> Lets Do Dinner </p>
-          <p style={style.h2}> Some text </p>
-          <p style={style.h3}> Some text </p>
-          <img alt='' style={style.img}src='https://cdn0.iconfinder.com/data/icons/bakery-10/512/Cupcake-256.png' />
-        </div>
-      </div>
-
-      <div style={style.containerTwo}>
-        <h1> Get Started </h1>
-        <i className='fa fa-spinner fa-spin' />
-        <p style={style.p}> See Trending Rated Recipes </p>
-        <p style={style.p}> See Top Rated Recipes </p>
-        <p style={style.p}> Ingredient Search </p>
+        <h1 style={style.h1}> Welcome </h1>
+        <p> Lets Do Dinner is a mobile app and website that provides recipe recommendations personalized to the individuals tastes, semantic recipe search. The Lets Get Dinner App was made to take thinking of what to make for dinner each night something to look forward to, and simple expieriece to our customers.</p>
       </div>
 
       <div style={style.containerThree}>
-        <h1> Lorem ipsum </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Arcu bibendum at varius vel pharetra vel turpis. Semper risus in hendrerit gravida rutrum quisque non. Eu mi bibendum neque egestas congue quisque egestas. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Aliquet enim tortor at auctor urna nunc id cursus metus. Integer enim neque volutpat ac tincidunt vitae. Enim neque volutpat ac tincidunt vitae. Sed turpis tincidunt id aliquet risus feugiat in.</p>
+        <img style={style.imgTwo}src='https://pune365.com/wp-content/uploads/2017/02/30287438_l.jpg' />
+        <img src='http://moziru.com/images/plate-clipart-dining-7.png' />
+        <img style={style.imgTwo} src='https://pune365.com/wp-content/uploads/2017/02/30287438_l.jpg' />
       </div>
+
+      <div style={style.containerTwo}>
+        <h1 className='centered'> Get Started! </h1>
+        <p className='p'> See Trending Rated Recipes </p>
+        <p className='p2'> Ingredient Search </p>
+        <p className='p3'> See Top Rated Recipes  </p>
+      </div>
+
     </div>
   </div>
+
 export default Home

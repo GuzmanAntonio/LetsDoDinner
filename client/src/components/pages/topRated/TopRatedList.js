@@ -4,16 +4,21 @@ import TopRatedCard from './TopRatedCard'
 
 const style = {
   container: {
+    backgroundColor: '#ffc9db',
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  h1: {
+    border: '1px solid black'
   }
 }
 
 const TopRatedList = ({ topRatedRecipes }) =>
   <div style={style.container}>
+
     {
       topRatedRecipes.map((recipe, index) =>
         <TopRatedCard key={index} recipe={recipe} />
