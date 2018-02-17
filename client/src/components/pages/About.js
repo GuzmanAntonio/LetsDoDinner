@@ -7,9 +7,8 @@ const styles = {
     color: '#black'
   },
   image: {
-    opacity: '0.5',
-    borderTop: '3px solid black'
-
+    width: '100%',
+    opacity: '0.5'
   },
   text: {
     position: 'absolute',
@@ -18,7 +17,12 @@ const styles = {
     transform: 'translate(-50%, -50%)'
   },
   container: {
-    banckground: '#ffc9db'
+    banckground: '#ffc9db',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    overFlow: 'hidden',
+    backgroundImage: 'url(https://www.klonblog.com/images/2012/02/free-paper-texture-8.jpg)'
   },
   about: {
     display: 'block',
@@ -35,9 +39,8 @@ const styles = {
     paddingRight: '3'
   },
   contact: {
-    display: 'block flex',
+    display: 'block-flex',
     alignItems: 'center',
-    flexDirection: 'column',
     fontSize: '20px',
     borderRadius: '10px',
     boxShadow: '5px 5px 10px rgba(0,0,0,0.5)',
