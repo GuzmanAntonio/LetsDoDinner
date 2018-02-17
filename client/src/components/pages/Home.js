@@ -14,6 +14,7 @@ const style = {
     fontFamily: 'Quicksand'
   },
   containerTwo: {
+    backgroundColor: 'black',
     borderBottom: '3px solid #87fffb',
     marginTop: 10,
     marginBottom: 100,
@@ -21,19 +22,19 @@ const style = {
     margin: 40,
     fontFamily: 'Quicksand',
     position: 'relative',
-    textAlign: 'center',
-    backgroundColor: 'white'
+    textAlign: 'center'
   },
   containerThree: {
-    backgroundColor: 'white',
     borderBottom: '3px solid #aee26f',
     padding: 20,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     margin: 40,
-    fontFamily: 'Quicksand'
+    fontFamily: 'Quicksand',
+    maWidth: '10%',
+    paddingRight: 30
 
   },
   h1: {
@@ -51,6 +52,10 @@ const style = {
   },
   img: {
     width: '30%'
+  },
+  imgTwo: {
+    width: '30%',
+    borderRadius: 5
   }
 }
 
@@ -63,9 +68,9 @@ const Home = () =>
       </div>
 
       <div style={style.containerThree}>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzQKYSHP9BK3jBV2lbfQtB8nzqBZmvUIfRAbWTuBssHDeDQRAmLA' />
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSWjHBojui3f9nzJwe369pWejXMEi8DT4nxpq7YzH10SF4uVnew' />
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0MCW_5JDNub8eeqg09nZqS9uiIv7wwlbLYrOu_oQdj_27LedVg' />
+        <img style={style.imgTwo}src='https://pune365.com/wp-content/uploads/2017/02/30287438_l.jpg' />
+        <img src='http://moziru.com/images/plate-clipart-dining-7.png' />
+        <img style={style.imgTwo} src='https://pune365.com/wp-content/uploads/2017/02/30287438_l.jpg' />
       </div>
 
       <div style={style.containerTwo}>
