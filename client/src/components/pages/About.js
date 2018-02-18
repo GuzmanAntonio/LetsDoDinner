@@ -1,21 +1,6 @@
 import React from 'react'
 
 const styles = {
-  p: {
-    fontSize: 80,
-    fontFamily: 'Oswald',
-    color: '#black'
-  },
-  image: {
-    width: '100%',
-    opacity: '0.5'
-  },
-  text: {
-    position: 'absolute',
-    top: '60%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)'
-  },
   container: {
     banckground: '#ffc9db',
     display: 'flex',
@@ -23,6 +8,22 @@ const styles = {
     justifyContent: 'center',
     overFlow: 'hidden',
     backgroundImage: 'url(https://www.klonblog.com/images/2012/02/free-paper-texture-8.jpg)'
+  },
+  p: {
+    fontSize: 80,
+    fontFamily: 'Oswald',
+    color: '#black'
+  },
+  image: {
+    width: '100%',
+    opacity: '0.5',
+    display: 'flex'
+  },
+  text: {
+    position: 'absolute',
+    top: '60%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)'
   },
   about: {
     display: 'block',
@@ -60,9 +61,7 @@ const styles = {
 
 const About = () =>
   <div style={styles.container} >
-    <div style={styles.image} >
-      <img alt='' src='https://img.domino.com/serve/literally-just-photos-of-really-organized-refrigerators-how-to-organize-refrigerator-fridge-full-of-produce-57c5df1581c866970ee84421-w1000_h1000.jpg' />
-    </div>
+    <img style={styles.image}alt='' src='https://img.domino.com/serve/literally-just-photos-of-really-organized-refrigerators-how-to-organize-refrigerator-fridge-full-of-produce-57c5df1581c866970ee84421-w1000_h1000.jpg' />
     <div style={styles.text}>
       <h3 style={styles.p}>ABOUT</h3>
       <div style={styles.about} >
