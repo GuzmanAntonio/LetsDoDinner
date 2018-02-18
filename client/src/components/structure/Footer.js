@@ -4,7 +4,11 @@ import IconButton from 'material-ui/IconButton'
 const styles = {
   container: {
     background: '#2d2d2d',
+    backgroundImage: 'url("https://www.transparenttextures.com/patterns/xv.png")',
+    // backgroundImage: 'url("https://www.transparenttextures.com/patterns/concrete-wall-2.png")',
+    // backgroundImage: 'url("https://www.transparenttextures.com/patterns/rocky-wall.png")',
     display: 'flex',
+    width: 'auto',
     justifyContent: 'space-evenly',
     flexDirection: 'row',
     paddingTop: '20',
@@ -42,21 +46,21 @@ const styles = {
     borderBottom: '3px #ffd84c solid'
   },
   line2: {
-    borderBottom: '3px #aee26f solid',
+    borderBottom: '3px #ffd84c solid',
     paddingTop: '5px',
     marginRight: '50px',
     marginLeft: '50px',
     opacity: '0.3'
   },
   line3: {
-    borderBottom: '3px #ffc9db solid',
+    borderBottom: '3px #ffd84c solid',
     paddingTop: '5px',
     marginRight: '100px',
     marginLeft: '100px',
     opacity: '0.2'
   },
   line4: {
-    borderBottom: '3px #87fffb solid',
+    borderBottom: '3px #ffd84c solid',
     paddingTop: '5px',
     marginRight: '150px',
     marginLeft: '150px',
@@ -72,12 +76,13 @@ const styles = {
     color: 'white'
   },
   credit: {
-    background: '#CCFFFF',
+    background: '#D2D7D3',
     boxShadow: '5px 5px 10px rgba(0,0,0,0.5)',
     borderRadius: '5px',
     paddingLeft: '5px',
     paddingRight: '5px',
-    color: 'black'
+    color: 'black',
+    fontWeight: 'bold'
   }
 }
 
