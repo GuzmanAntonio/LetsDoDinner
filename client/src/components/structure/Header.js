@@ -25,8 +25,8 @@ const style = {
   },
   img: {
     height: '300px',
-    width: '1000px',
-    // opacity: 0.9
+    width: '100%'
+    // opacity:0.9
   }
 }
 
