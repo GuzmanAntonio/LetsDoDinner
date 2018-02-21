@@ -14,29 +14,36 @@ const styles = {
     textAlign: 'center',
     fontFamily: 'Quicksand',
     WebkitBoxSizing: 'border-box',
-    borderTopRadius: 5
+    borderTopRadius: 5,
+    backgroundColor: '#2d3436',
+    borderRadius: 10
   },
   image: {
     maxWidth: '100%'
   },
-  card: {
-    backgroundColor: 'red',
-    display: 'flex',
-    flexDirection: 'column',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center'
+  link: {
+    textDecoration: 'none',
+    color: '#DADFE1',
+    padding: 10,
+    fontSize: 12
   },
-  h1: {
+  linkDiv: {
+    borderRadius: 3,
+    border: '1px solid #DADFE1',
+    margin: 15
+  },
+  header: {
     textAlign: 'center',
-    fontSize: 20
+    fontSize: 20,
+    color: '#DADFE1',
+    marginBottom: 0
   }
 }
 
 const SearchResultsCard = ({ recipe }) =>
   <div style={styles.container}>
-    <h1 style={styles.h1}>{recipe.title}</h1>
-    <div><a href={recipe.f2f_url}>View Recipe</a></div>
+    <p style={styles.header}>{recipe.title}</p>
+    <div style={styles.linkDiv}><a style={styles.link} href={recipe.f2f_url}>View Recipe</a></div>
     <img style={styles.image} alt='' src={recipe.image_url} />
   </div>
 
