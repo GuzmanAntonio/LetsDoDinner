@@ -4,6 +4,9 @@ import TopRatedCard from './TopRatedCard'
 
 const style = {
   container: {
+    paddingTop: 25,
+    paddingBottom: 10,
+    marginBottom: 5,
     backgroundColor: '#ffc9db',
     display: 'flex',
     flexDirection: 'row',

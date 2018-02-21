@@ -5,7 +5,6 @@ import SearchResultsCard from './SearchResultsCard'
 const style = {
   container: {
     display: 'flex',
-    flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center'

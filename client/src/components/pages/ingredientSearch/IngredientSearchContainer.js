@@ -5,26 +5,31 @@ const apiKey = '8defee2e32595ca866a94f526f42c9e6'
 
 const styles = {
   container: {
-    padding: 20,
-    border: '10px solid #ffc9db'
+    padding: 40,
+    borderRadius: 10,
+    marginBottom: 20,
+    backgroundColor: '#DADFE1'
   },
   header: {
     fontFamily: 'Oswald',
     fontSize: 40,
-    color: '#aee26f',
+    color: '#2d3436',
     marginBottom: 0,
     marginTop: 0
   },
   subHeader: {
-    color: '#ffd84c',
+    color: '#636e72',
     marginTop: 10,
     fontFamily: 'Quicksand',
-    fontSize: 20
+    fontSize: 20,
+    marginBottom: 5
   },
   subHeader2: {
-    color: '#ffc9db',
+    color: '#636e72',
     fontFamily: 'Quicksand',
-    fontSize: 12
+    fontSize: 12,
+    marginTop: 0,
+    marginBottom: 30
   },
   input: {
     padding: 10,
@@ -76,7 +81,7 @@ class IngredientSearchContainer extends Component {
       <div>
         <form style={styles.container} action='submit' onSubmit={this.fetchRecipe}>          <p style={styles.header}>What's in your fridge?</p>
           <p style={styles.subHeader}>Enter the contents of your fridge and we'll tell you what to cook.</p>
-          <p style={styles.subHeader2}>NOTE: separate ingredients with commas.</p>
+          <p style={styles.subHeader2}>Please separate ingredients with commas.</p>
           <input
             style={styles.input}
             type='text'
