@@ -11,7 +11,7 @@ const style = {
   },
   h1: {
     fontFamily: 'oswald',
-    fontSize: 90,
+    fontSize: 80,
     marginTop: -15,
     paddingBottom: 20,
     letterSpacing: 4
