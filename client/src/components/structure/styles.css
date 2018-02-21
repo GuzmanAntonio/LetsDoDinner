@@ -43,3 +43,9 @@
   letter-spacing: 2;
 }
 
+
+.header {
+  /* background-image: url('http://janeyholliday.com/wp-content/uploads/2015/08/Chopping-Board.jpg'); */
+  background-size: 100%;
+  /* opacity: 0.8 */
+}

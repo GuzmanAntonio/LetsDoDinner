@@ -6,22 +6,24 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    flexWrap: 'wrap',
     overFlow: 'hidden',
-    backgroundImage: 'url(https://www.klonblog.com/images/2012/02/free-paper-texture-8.jpg)'
+    backgroundImage: 'linear-gradient(to right bottom, #ffc9db, #ffc1c4, #ffbf9f, #ffc874, #ffd84c)',
+    // maxWidth: '80%',
+    textAlign: 'center'
   },
   p: {
-    fontSize: 80,
+    fontSize: 60,
     fontFamily: 'Oswald',
-    color: '#black'
+    color: 'black',
+    borderBottom: '3px solid black'
   },
   image: {
-    width: '100%',
-    opacity: '0.5',
-    display: 'flex'
+    opacity: '0.1'
   },
   text: {
     position: 'absolute',
-    top: '60%',
+    top: '75%',
     left: '50%',
     transform: 'translate(-50%, -50%)'
   },
@@ -32,7 +34,7 @@ const styles = {
     boxShadow: '5px 5px 10px rgba(0,0,0,0.5)',
     fontFamily: 'quicksand',
     borderBottom: '3px solid #ffc9db',
-    backgroundColor: '#ffc9db',
+    backgroundColor: '#ECF0F1',
     color: 'black',
     paddingTop: '3',
     paddingBottom: '3',
@@ -47,7 +49,7 @@ const styles = {
     boxShadow: '5px 5px 10px rgba(0,0,0,0.5)',
     fontFamily: 'quicksand',
     borderBottom: '3px solid #ffc9db',
-    backgroundColor: '#ffd84c',
+    backgroundColor: '#ECF0F1',
     color: 'black',
     paddingTop: '3',
     paddingBottom: '3',

@@ -4,11 +4,12 @@ import IconButton from 'material-ui/IconButton'
 const styles = {
   container: {
     background: '#2d2d2d',
-    backgroundImage: 'url("https://www.transparenttextures.com/patterns/xv.png")',
+    // backgroundImage: 'url("https://www.transparenttextures.com/patterns/xv.png")'
     // backgroundImage: 'url("https://www.transparenttextures.com/patterns/concrete-wall-2.png")',
-    // backgroundImage: 'url("https://www.transparenttextures.com/patterns/rocky-wall.png")',
+    backgroundImage: 'url("https://www.transparenttextures.com/patterns/rocky-wall.png")',
     display: 'flex',
     width: 'auto',
+    flexWrap: 'wrap',
     justifyContent: 'space-evenly',
     flexDirection: 'row',
     paddingTop: '20',
@@ -20,7 +21,8 @@ const styles = {
     borderRadius: '10px',
     borderLeft: '5px solid #3a3a3a',
     borderRight: '5px solid #3a3a3a',
-    borderBottom: '5px solid #3a3a3a'
+    borderBottom: '5px solid #3a3a3a',
+    maxWidth: '100%'
   },
   first: {
     paddingLeft: '20',
@@ -76,7 +78,7 @@ const styles = {
     color: 'white'
   },
   credit: {
-    background: '#D2D7D3',
+    background: '#ffc9db',
     boxShadow: '5px 5px 10px rgba(0,0,0,0.5)',
     borderRadius: '5px',
     paddingLeft: '5px',
