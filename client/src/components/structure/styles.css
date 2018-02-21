@@ -23,7 +23,7 @@
   transform: translate(-50%, -50%);
   color: black;
   font-family: 'oswald';
-  font-size: 7100;
+  font-size: 20;
   margin-top: -15;
   padding-bottom: 20;
   letter-spacing: 2;
@@ -41,11 +41,5 @@
   margin-top: -15;
   padding-bottom: 20;
   letter-spacing: 2;
-}
-
-.header {
-  /* background-image: url('http://janeyholliday.com/wp-content/uploads/2015/08/Chopping-Board.jpg'); */
-  background-size: 100%;
-  /* opacity: 0.8 */
 }
 
