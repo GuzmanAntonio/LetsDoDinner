@@ -20,7 +20,9 @@ const styles = {
     borderBottom: '5px solid #ECF0F1'
   },
   image: {
-    opacity: '0.1'
+    opacity: '0.1',
+    maxWidth: '100%',
+    height: 'auto'
   },
   text: {
     position: 'absolute',
@@ -28,10 +30,12 @@ const styles = {
     paddingLeft: '10%',
     paddingRight: '10%',
     left: '50%',
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
+    maxWidth: '80%',
+    height: 'auto'
   },
   about: {
-    display: 'block',
+    // display: 'block',
     fontSize: '20px',
     borderRadius: '10px',
     boxShadow: '5px 5px 10px rgba(0,0,0,0.4)',
@@ -46,7 +50,7 @@ const styles = {
     paddingRight: '3'
   },
   contact: {
-    display: 'block-flex',
+    // display: 'block-flex',
     alignItems: 'center',
     fontSize: '20px',
     borderRadius: '10px',
@@ -70,7 +74,9 @@ const styles = {
 const About = () =>
   <div style={styles.container} >
     <div style={styles.all} >
-      <img style={styles.image}alt='' src='https://img.domino.com/serve/literally-just-photos-of-really-organized-refrigerators-how-to-organize-refrigerator-fridge-full-of-produce-57c5df1581c866970ee84421-w1000_h1000.jpg' />
+      {/* <div style={styles.image} > */}
+      <img style={styles.image} alt='' src='https://img.domino.com/serve/literally-just-photos-of-really-organized-refrigerators-how-to-organize-refrigerator-fridge-full-of-produce-57c5df1581c866970ee84421-w1000_h1000.jpg' />
+      {/* </div> */}
       <div style={styles.text}>
         <h3 style={styles.p}>ABOUT</h3>
         <div style={styles.about} >
