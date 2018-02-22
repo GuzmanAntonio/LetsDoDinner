@@ -35,6 +35,15 @@ const styles = {
   },
   card: {
     maxWidth: 345
+  },
+  link: {
+    textDecoration: 'none',
+    color: '#DADFE1',
+    padding: 10,
+    fontSize: 15,
+    border: '1px solid #DADFE1',
+    borderRadius: 3,
+    margin: 15
   }
 
 }
@@ -45,7 +54,7 @@ const TopRatedCard = ({ recipe }) =>
       <div style={styles.container}>
         <p style={styles.h1}> {recipe.title}</p>
         <p>Rank:{recipe.social_rank}</p>
-        <div><a href={recipe.f2f_url}>View Recipe</a></div>
+        <div style={styles.link}><a href={recipe.f2f_url}>View Recipe</a></div>
         <img style={styles.image} alt='' src={recipe.image_url} />
       </div>
     </Card>
